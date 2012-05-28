@@ -7,6 +7,15 @@
  * @version //autogentag//
  */
 
+/**
+ * This class brings in HTTP request support, with the eZ Publish Proxy Settings pre-loaded
+ * .
+ * It is an iso-match of php.net/httprequest, with one exception: the class is instanciated with the proxyhost,
+ * proxyport, proxyauth (basic) set by default according to site.ini
+ *
+ * A custom proxy can still be used by providing custom values as $options in the constructor.
+ *
+ */
 class ezpHttpRequest extends HttpRequest
 {
     public function __construct( $url, $requestMethod = HTTP_METH_GET, array $options = array() )
@@ -39,4 +48,3 @@ class ezpHttpRequest extends HttpRequest
         parent::__construct( $url, $requestMethod, $options + $proxyOptions );
     }
 }
-?>
