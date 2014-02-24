@@ -11,6 +11,8 @@ This extension provides ezpHttpRequest, a child class of HttpRequest, provided b
 
 Installation
 ------------
+Install PHP extension pecl_http version 1.7.x, version 2.x will not work because of an API change.
+
 Drop the extension's folder in your extension folder, and regenerate the extensions autoload. You don't need to enable
 the extension, as autoloads are independant of wether extensions are loaded or not.
 
