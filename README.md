@@ -3,7 +3,7 @@ ezphttprequest
 
 License
 -------
-This extension is licensed under the GPL license, copyright 2012 to eZ Systems AS. All rights reserved.
+See LICENSE file provided with this project.
 
 Purpose
 -------
